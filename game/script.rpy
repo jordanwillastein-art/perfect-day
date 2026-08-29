@@ -84,14 +84,9 @@ label scene_2:
     hide seagull
     hide beach
     show underwater
-    n "Which direction you swim to?"
-    menu:
-        "Left":
-            jump swim_left
-        "Right":
-            jump swim_right
-        "the undercurrent!! :D ^_^":
-            jump swim_undercurrent
+
+    n "First you swim in the left direction"
+    jump swim_left
 
 label swim_left:
     show mermen
@@ -110,6 +105,7 @@ label swim_left:
     n "He gives you a magical lasso. And you say thank you and swim away."
     hide mermen
 
+    n "Next you swim in the right direction"
     jump swim_right
 
 label swim_right:
@@ -138,6 +134,7 @@ label swim_right:
     n "She gives you a magical brooch."
     hide mermaid
 
+    n "Finally you swim under the undercurrent! :0 ToT"
     jump swim_undercurrent
 
 label swim_undercurrent:
@@ -159,7 +156,7 @@ label swim_undercurrent:
 
     n "You help the merfin decipher the codes from the book"
     hide book
-    jump swim_left
+    jump scene_3
 
 label scene_3:
     n "You swim back to the shore and dry off in the sun."
@@ -186,4 +183,16 @@ label scene_3:
 
     y "Aah I got this! The brooch might be a nuclear launch pad and the deciphered code is a nuclear code :D"
 
-    n "You swing the magical lasso around and it whips the Kraken. You do that a couple of times until the Kraken is weaker!"
+    n "KRAKEN BOSS FIGHT TIME!"
+    jump kraken_fight
+
+label kraken_fight:
+    n "Choose your weapon"
+        menu:
+            "Magical Lasso"
+            "Brooch broach attack!"
+
+
+
+
+n "You swing the magical lasso around and it whips the Kraken. You do that a couple of times until the Kraken is weaker!"
