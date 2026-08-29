@@ -37,7 +37,7 @@ label start:
 
 label scene_1:
     hide empty beach
-    show beach
+    scene beach
 
     n "You set up your beach umbrella and it is so stylish!"
 
@@ -83,7 +83,7 @@ label scene_2:
     n "Seagull is yelling 'Krraaa! Krraaa!'"
     hide seagull
     hide beach
-    show underwater
+    scene underwater
     n "Which direction you swim to?"
     menu:
         "Left":
@@ -163,11 +163,11 @@ hide merfin
 
 label scene_3:
     n "You swim back to the shore and dry off in the sun."
-
+    scene beach
     y "Ah! Time for another swim."
 
     n "For some reason, you forgot to put your magical lasso and brooch away"
-
+    scene underwater
     n "You jump back in but you see all the fishes, merfolk and sea creatures of all kind rushing to the shore"
 
     y "Hmmm why is everyone swimming to the shore?"
