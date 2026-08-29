@@ -156,6 +156,7 @@ hide merfin
 
     n "You help the merfin decipher the codes from the book"
     hide book
+
     jump scene_3
 
 label scene_3:
@@ -189,10 +190,14 @@ label scene_3:
 label kraken_fight:
     n "Choose your weapon"
         menu:
-            "Magical Lasso"
-            "Brooch broach attack!"
+            "Magical Lasso":    
+                jump magical_lasso
+            "Brooch venum attack!":
+                jump brooch_attack
+            "Final attack! Nuke activation":
+                jump nuke_code
 
+label magical_lasso:
+    n "You whip your magical lasso and the kraken gets significantly weaker!"
+    jump kraken_fight
 
-
-
-n "You swing the magical lasso around and it whips the Kraken. You do that a couple of times until the Kraken is weaker!"
