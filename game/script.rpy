@@ -136,5 +136,5 @@ label swim_right:
     hide mermaid
 
 label swim_undercurrent:
-    n "Aaaah undercurrents!!!"
+    n "Aaaah the undercurrent!!!"
 
