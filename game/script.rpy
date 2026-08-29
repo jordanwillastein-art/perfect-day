@@ -81,6 +81,8 @@ label scene_2:
 
     n "Seagull is yelling 'Krraaa! Krraaa!'"
     hide seagull
+    hide beach
+    show underwater
     n "Which direction you swim to?"
     menu:
         "Left":
@@ -89,7 +91,7 @@ label scene_2:
             jump swim_right
         "the undercurrent!! :D ^_^":
             jump swim_undercurrent
-    show water
+
 label swim_left:
     show mermen
     n "You see a merman with a cowboy hat!"
