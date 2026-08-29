@@ -23,12 +23,12 @@ label start:
     hide uni-rover
     show matcha_latte 
     
-    n "You arrive on the uni-rover and it fades into you on the beach with refreshing iced matcha latte in hand"
+    n "You travel in brand new uni-rover and arrive at the beach beach with refreshing iced matcha latte in hand"
     
     n "You step onto the tropical white sand, and the beautiful crystal clear turquoise water ripples in front of you"
     
     n "You think 'This will be a peaceful idyllic day, but you’re not sure if it’ll end up ideal' as you sip your matcha latte" # would like to make quotations
-    n "heheh i am sure a delicious matcha, thinks the matcha latte"
+    n "heheh vut i am sure of the delicious matcha i have, you then CHUG the matcha latte"
 
     jump scene_1
 
