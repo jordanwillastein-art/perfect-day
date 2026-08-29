@@ -24,7 +24,7 @@ label start:
     n "You drive to a beach in Australia in your brand new uni-rover"
 
     hide uni-rover
-    scene beach
+    scene empty beach
     show boba 
     n "you arrive at the beach with a refreshing iced matcha latte in hand"
     
@@ -36,7 +36,8 @@ label start:
     jump scene_1
 
 label scene_1:
-
+    hide empty beach
+    show beach
 
     n "You set up your beach umbrella and it is so stylish!"
 
@@ -148,14 +149,16 @@ label swim_undercurrent:
 
     y "I don't know who you are but thank you for saving me from that horrible undercurrent!"
 
-    merfin "You're welcome, I am a merfin. You need to help me too ToT"
+    merfin "You're welcome, I am a merfin. and because i saved you i need you to help me too! ToT"
 
     y "What do you need help with?"
 
     merfin "You need to help me with deciphering codes from a book"
+    show book
+    n "try to decifer the code!"
 
-    n "You help the merfin decipher the codes from the book" 
-
+    n "You help the merfin decipher the codes from the book"
+    hide book
     jump swim_left
 
 label scene_3:
