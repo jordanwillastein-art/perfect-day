@@ -3,11 +3,7 @@
 # Declare characters used by this game. The color argument colorizes the
 # name of the character.
 
-
-from cProfile import label
-
-
-define o = Character("evil octopus")
+define o = Character("evil octopus, color=purple")
 define n = Character("Narrator", color="#50FFD6") 
 
 
@@ -79,6 +75,8 @@ label scene_2:
 
     n "Meanwhile, a sneaky seagull grabs a bite out of your fries"
 
+    n "Seagull is yelling 'Krraaa!'"
+
     n "Which direction you swim to?"
     menu:
         "Left":
@@ -96,5 +94,3 @@ label swim_left:
     n "Y: Huh?? Who are you?"
 
     n "MM: I am a Texas merman, and a sea-cowboy by heart "
-
-
