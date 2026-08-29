@@ -149,15 +149,15 @@ label swim_undercurrent:
     merfin "You're welcome, I am a merfin. and because i saved you i need you to help me too! ToT"
 
     y "What do you need help with?"
-hide merfin
+    hide merfin
     merfin "You need to help me with deciphering codes from a book"
     show book
-    n "try to decifer the code!"
+
+    n "try to decifer the code"
 
     n "You help the merfin decipher the codes from the book"
     hide book
-
-    jump scene_3
+    jump swim_left
 
 label scene_3:
     n "You swim back to the shore and dry off in the sun."
