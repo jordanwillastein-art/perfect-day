@@ -32,7 +32,7 @@ label scene_1:
 
     scene bg beach_1
 
-    show matcha_latte
+    show boba 
 
     n "You set up your beach umbrella and it is so stylish!"
 
@@ -94,3 +94,4 @@ label swim_left:
     n "Y: Huh?? Who are you?"
 
     n "MM: I am a Texas merman, and a sea-cowboy by heart "
+
