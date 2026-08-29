@@ -158,7 +158,7 @@ label swim_undercurrent:
     n "try to decifer the code!"
 
     n "You help the merfin decipher the codes from the book"
-
+    hide book
     jump swim_left
 
 label scene_3:
