@@ -161,29 +161,3 @@ label swim_undercurrent:
     hide book
     jump swim_left
 
-label scene_3:
-    n "You swim back to the shore and dry off in the sun."
-
-    y "Ah! Time for another swim."
-
-    n "For some reason, you forgot to put your magical lasso and brooch away"
-
-    n "You jump back in but you see all the fishes, merfolk and sea creatures of all kind rushing to the shore"
-
-    y "Hmmm why is everyone swimming to the shore?"
-
-    n "Well, you're not exactly concerned about that and just keep swimming"
-
-    n "Then you see it... A Sea Monster!"
-
-    n "And just a sea monster... a Kraken!!"
-
-    n "You have no where to run! or may I say swim"
-
-    n "You do what all imbecilic heroes do... Fight!! :D"
-
-    y "Hmmm maybe this lasso and brooch can be a weapon?"
-
-    y "Aah I got this! The brooch might be a nuclear launch pad and the deciphered code is a nuclear code :D"
-
-    n "You swing the magical lasso around and it whips the Kraken. You do that a couple of times until the Kraken is weaker!"
