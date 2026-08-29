@@ -131,4 +131,5 @@ label swim_right:
     n "She gives you a magical brooch."
 
 label swim_undercurrent:
-    n 
+    n "Aaaah undercurrents!!!"
+
