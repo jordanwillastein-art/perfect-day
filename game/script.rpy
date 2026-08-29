@@ -32,7 +32,7 @@ label start:
     
     n "You think 'This will be a peaceful idyllic day, but you’re not sure if it’ll end up ideal' as you sip your matcha latte" # would like to make quotations
     n "heheh vut i am sure of the delicious matcha i have, you then CHUG the matcha latte"
-
+    hide boba
     jump scene_1
 
 label scene_1:
@@ -80,7 +80,7 @@ label scene_2:
     n "Meanwhile, a sneaky seagull grabs a bite out of your fries"
 
     n "Seagull is yelling 'Krraaa! Krraaa!'"
-
+    hide seagull
     n "Which direction you swim to?"
     menu:
         "Left":
@@ -89,8 +89,9 @@ label scene_2:
             jump swim_right
         "the undercurrent!! :D ^_^":
             jump swim_undercurrent
-
+    show water
 label swim_left:
+    show mermen
     n "You see a merman with a cowboy hat!"
 
     tex_merman "Yeehaw! Howdy there! How are ya?"
@@ -104,10 +105,11 @@ label swim_left:
     tex_merman "Wait! I have a gift for you!"
 
     n "He gives you a magical brooch. And you say thank you and swim away."
+    hide mermen
 
 label swim_right:
     n "There’s something shining so bright in the distance that you’re getting kinda blinded"
-
+    show mermaid
     n "You see a mermaid! :D Her scales are pink and so is her outfit, she has a plethora of pink gems including pink pearls, pink sapphire, pink opals, pink coral and more! "
 
     y "Huh?? Who are you? How do you have an extravagant amount of gems?"
@@ -129,6 +131,7 @@ label swim_right:
     pearl_mermaid "Rose Pearl: Thank you so much for helping me find my pink pearl necklace! I would like to give you a gift in return."
 
     n "She gives you a magical brooch."
+    hide mermaid
 
 label swim_undercurrent:
     n "Aaaah undercurrents!!!"
