@@ -107,8 +107,10 @@ label swim_left:
 
     tex_merman "Wait! I have a gift for you!"
 
-    n "He gives you a magical brooch. And you say thank you and swim away."
+    n "He gives you a magical lasso. And you say thank you and swim away."
     hide mermen
+
+    jump swim_right
 
 label swim_right:
     n "There’s something shining so bright in the distance that you’re getting kinda blinded"
@@ -136,6 +138,8 @@ label swim_right:
     n "She gives you a magical brooch."
     hide mermaid
 
+    jump swim_undercurrent
+
 label swim_undercurrent:
     n "Aaaah the undercurrent!!!"
 
@@ -153,5 +157,33 @@ label swim_undercurrent:
     show book
     n "try to decifer the code!"
 
-    n "make sure to remember the decifered code for it is the only access to future power!"
+    n "You help the merfin decipher the codes from the book"
 
+    jump swim_left
+
+label scene_3:
+    n "You swim back to the shore and dry off in the sun."
+
+    y "Ah! Time for another swim."
+
+    n "For some reason, you forgot to put your magical lasso and brooch away"
+
+    n "You jump back in but you see all the fishes, merfolk and sea creatures of all kind rushing to the shore"
+
+    y "Hmmm why is everyone swimming to the shore?"
+
+    n "Well, you're not exactly concerned about that and just keep swimming"
+
+    n "Then you see it... A Sea Monster!"
+
+    n "And just a sea monster... a Kraken!!"
+
+    n "You have no where to run! or may I say swim"
+
+    n "You do what all imbecilic heroes do... Fight!! :D"
+
+    y "Hmmm maybe this lasso and brooch can be a weapon?"
+
+    y "Aah I got this! The brooch might be a nuclear launch pad and the deciphered code is a nuclear code :D"
+
+    n "You swing the magical lasso around and it whips the Kraken. You do that a couple of times until the Kraken is weaker!"
