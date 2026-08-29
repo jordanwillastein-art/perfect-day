@@ -7,11 +7,11 @@
 
 define n = Character("Narrator", color="#50FFD6")
 
-define mm = Character("Texas Merman", color="#00BFFF")
-define m = Character("Mermaid", color="#FFB6C1")
-define me = Character("Merrow", color="#1E1AFF")
+define tex_merman = Character("Texas Merman", color="#00BFFF")
+define pearl_mermaid = Character("Rose Pearl the Mermaid", color="#FFB6C1")
+define merrow = Character("Merrow", color="#1E1AFF")
 
-define o = Character("evil octopus", color="#800080")
+define krak = Character("Kraken the evil octopus", color="#800080")
 
 
 # The game starts here.
@@ -96,12 +96,42 @@ label scene_2:
 label swim_left:
     n "You see a merman with a cowboy hat!"
 
-    n "MM: Yeehaw! Howdy there! How are ya?"
+    tex_merman "MM: Yeehaw! Howdy there! How are ya?"
 
-    n "Y: Huh?? Who are you?"
+    n "You: Huh?? Who are you?"
 
-    n "MM: I am a Texas merman, and a sea-cowboy by heart."
+    tex_merman "MM: I am a Texas merman, and a sea-cowboy by heart."
 
-    n "Y: I think I need to go now. 
+    n "You: I think I need to go now."
 
-    MM: Wait! I have a gift for you!"
+    tex_merman "MM: Wait! I have a gift for you!"
+
+    n "He gives you a magical brooch. And you say thank you and swim away."
+
+label swim_right:
+    n "There’s something shining so bright in the distance that you’re getting kinda blinded"
+
+    n "You see a mermaid! :D Her scales are pink and so is her outfit, she has a plethora of pink gems including pink pearls, pink sapphire, pink opals, pink coral and more! "
+
+    n "You: Huh?? Who are you? How do you have an extravagant amount of gems?"
+
+    pearl_mermaid "M: I am the pink mermaid. My name is Rose Pearl. That is whatever, the real question is who are you ? "
+
+    n "You: I am a proud Aussie, that’s who I am!"
+
+    pearl_mermaid "M: Hmmm okay Aussie. I need some help on the island."
+
+    n "You: What kind of help do you need?"
+
+    pearl_mermaid "M: I need you to help me find my lost pink pearl necklace. It is very important to me, and I can’t find it anywhere."
+
+    n "You: Okay, I will help you find it."
+
+    n "In an hour you come back with the pink pearl necklace for Rose Pearl the Mermaid. She is very happy and grateful for your help." 
+
+    pearl_mermaid "Rose Pearl: Thank you so much for helping me find my pink pearl necklace! I would like to give you a gift in return."
+
+    n "She gives you a magical brooch."
+
+label swim_undercurrent:
+    n 
