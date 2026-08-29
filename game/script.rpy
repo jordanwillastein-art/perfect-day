@@ -37,7 +37,7 @@ label start:
 
 label scene_1:
     hide empty beach
-    show beach
+    scene beach
 
     n "You set up your beach umbrella and it is so stylish!"
 
@@ -143,13 +143,13 @@ label swim_undercurrent:
     n "You are being pulled down by the undercurrent, and you are struggling to swim back up to the surface"
 
     n "You see a merfin, a mermaid/merman type creature but nonbinary, swimming towards you and pulls you into a bubble of air"
-
+    show merfin
     y "I don't know who you are but thank you for saving me from that horrible undercurrent!"
 
     merfin "You're welcome, I am a merfin. and because i saved you i need you to help me too! ToT"
 
     y "What do you need help with?"
-
+hide merfin
     merfin "You need to help me with deciphering codes from a book"
     show book
     n "try to decifer the code!"
@@ -160,11 +160,11 @@ label swim_undercurrent:
 
 label scene_3:
     n "You swim back to the shore and dry off in the sun."
-
+    scene beach
     y "Ah! Time for another swim."
 
     n "For some reason, you forgot to put your magical lasso and brooch away"
-
+    scene underwater
     n "You jump back in but you see all the fishes, merfolk and sea creatures of all kind rushing to the shore"
 
     y "Hmmm why is everyone swimming to the shore?"
