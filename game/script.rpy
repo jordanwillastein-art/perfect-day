@@ -10,16 +10,16 @@ define n = Character("Narrator", color="#50FFD6")
 # The game starts here.
 label start:
 
-    scene bg beach_1
+    scene road
 
     show uni-rover
 
-    n "You drive to a beach in Australia"
+    n "You drive to a beach in Australia in your brand new uni-rover"
 
     hide uni-rover
-    show matcha_latte 
-    
-    n "You travel in brand new uni-rover and arrive at the beach beach with refreshing iced matcha latte in hand"
+    scene beach
+    show boba 
+    n "you arrive at the beach with a refreshing iced matcha latte in hand"
     
     n "You step onto the tropical white sand, and the beautiful crystal clear turquoise water ripples in front of you"
     
@@ -30,9 +30,6 @@ label start:
 
 label scene_1:
 
-    scene bg beach_1
-
-    show boba 
 
     n "You set up your beach umbrella and it is so stylish!"
 
@@ -72,7 +69,7 @@ label no_weather:
 
 label scene_2:
     n "Finally, you decide to take a dip in the ocean. You run to the waters and splash!! You're out for a swim!"
-
+    show seagull
     n "Meanwhile, a sneaky seagull grabs a bite out of your fries"
 
     n "Seagull is yelling 'Krraaa!'"
