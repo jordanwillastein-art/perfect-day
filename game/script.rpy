@@ -107,6 +107,8 @@ label swim_left:
     n "He gives you a magical brooch. And you say thank you and swim away."
     hide mermen
 
+    jump scene_3
+
 label swim_right:
     n "There’s something shining so bright in the distance that you’re getting kinda blinded"
     show mermaid
@@ -133,6 +135,8 @@ label swim_right:
     n "She gives you a magical brooch."
     hide mermaid
 
+    jump scene_3
+
 label swim_undercurrent:
     n "Aaaah undercurrents!!!"
 
@@ -150,3 +154,9 @@ label swim_undercurrent:
 
     n "You help the merfin decipher the codes from the book"
 
+    jump scene_3
+
+label scene_3:
+    n "You swim back to the shore and dry off in the sun."
+
+    y ""
