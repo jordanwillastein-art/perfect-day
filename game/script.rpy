@@ -3,8 +3,15 @@
 # Declare characters used by this game. The color argument colorizes the
 # name of the character.
 
-define o = Character("evil octopus, color=purple")
-define n = Character("Narrator", color="#50FFD6") 
+
+
+define n = Character("Narrator", color="#50FFD6")
+
+define mm = Character("Texas Merman", color="#00BFFF")
+define m = Character("Mermaid", color="#FFB6C1")
+define me = Character("Merrow", color="#1E1AFF")
+
+define o = Character("evil octopus", color="#800080")
 
 
 # The game starts here.
@@ -17,7 +24,7 @@ label start:
     n "You drive to a beach in Australia"
 
     hide uni-rover
-    show matcha_latte 
+    show boba
     
     n "You arrive on the uni-rover and it fades into you on the beach with refreshing iced matcha latte in hand"
     
@@ -75,7 +82,7 @@ label scene_2:
 
     n "Meanwhile, a sneaky seagull grabs a bite out of your fries"
 
-    n "Seagull is yelling 'Krraaa!'"
+    n "Seagull is yelling 'Krraaa! Krraaa!'"
 
     n "Which direction you swim to?"
     menu:
@@ -93,5 +100,8 @@ label swim_left:
 
     n "Y: Huh?? Who are you?"
 
-    n "MM: I am a Texas merman, and a sea-cowboy by heart "
+    n "MM: I am a Texas merman, and a sea-cowboy by heart."
 
+    n "Y: I think I need to go now. 
+
+    MM: Wait! I have a gift for you!"
