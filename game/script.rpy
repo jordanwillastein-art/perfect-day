@@ -146,13 +146,13 @@ label swim_undercurrent:
     n "You are being pulled down by the undercurrent, and you are struggling to swim back up to the surface"
 
     n "You see a merfin, a mermaid/merman type creature but nonbinary, swimming towards you and pulls you into a bubble of air"
-
+    show merfin
     y "I don't know who you are but thank you for saving me from that horrible undercurrent!"
 
     merfin "You're welcome, I am a merfin. and because i saved you i need you to help me too! ToT"
 
     y "What do you need help with?"
-
+hide merfin
     merfin "You need to help me with deciphering codes from a book"
     show book
     n "try to decifer the code!"
