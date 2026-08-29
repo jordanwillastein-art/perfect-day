@@ -4,10 +4,10 @@
 # name of the character.
 
 
-
+define y = Character("You", color="#F195E7")
 define n = Character("Narrator", color="#50FFD6")
 
-define tex_merman = Character("Texas Merman", color="#00BFFF")
+define tex_merman = Character("Texas Sea-Cowboy Merman", color="#00BFFF")
 define pearl_mermaid = Character("Rose Pearl the Mermaid", color="#FFB6C1")
 define merrow = Character("Merrow", color="#1E1AFF")
 
@@ -93,15 +93,15 @@ label scene_2:
 label swim_left:
     n "You see a merman with a cowboy hat!"
 
-    tex_merman "MM: Yeehaw! Howdy there! How are ya?"
+    tex_merman "Yeehaw! Howdy there! How are ya?"
 
-    n "You: Huh?? Who are you?"
+    y "Huh?? Who are you?"
 
-    tex_merman "MM: I am a Texas merman, and a sea-cowboy by heart."
+    tex_merman "I am a Texas merman, and a sea-cowboy by heart."
 
-    n "You: I think I need to go now."
+    y "I think I need to go now."
 
-    tex_merman "MM: Wait! I have a gift for you!"
+    tex_merman "Wait! I have a gift for you!"
 
     n "He gives you a magical brooch. And you say thank you and swim away."
 
@@ -110,19 +110,19 @@ label swim_right:
 
     n "You see a mermaid! :D Her scales are pink and so is her outfit, she has a plethora of pink gems including pink pearls, pink sapphire, pink opals, pink coral and more! "
 
-    n "You: Huh?? Who are you? How do you have an extravagant amount of gems?"
+    y "Huh?? Who are you? How do you have an extravagant amount of gems?"
 
-    pearl_mermaid "M: I am the pink mermaid. My name is Rose Pearl. That is whatever, the real question is who are you ? "
+    pearl_mermaid "I am the pink mermaid. My name is Rose Pearl. That is whatever, the real question is who are you ? "
 
-    n "You: I am a proud Aussie, that’s who I am!"
+    y "I am a proud Aussie, that’s who I am!"
 
-    pearl_mermaid "M: Hmmm okay Aussie. I need some help on the island."
+    pearl_mermaid "Hmmm okay Aussie. I need some help on the island."
 
-    n "You: What kind of help do you need?"
+    y "What kind of help do you need?"
 
-    pearl_mermaid "M: I need you to help me find my lost pink pearl necklace. It is very important to me, and I can’t find it anywhere."
+    pearl_mermaid "I need you to help me find my lost pink pearl necklace. It is very important to me, and I can’t find it anywhere."
 
-    n "You: Okay, I will help you find it."
+    y "Okay, I will help you find it."
 
     n "In an hour you come back with the pink pearl necklace for Rose Pearl the Mermaid. She is very happy and grateful for your help." 
 
@@ -133,3 +133,6 @@ label swim_right:
 label swim_undercurrent:
     n "Aaaah undercurrents!!!"
 
+    n "You are being pulled down by the undercurrent, and you are struggling to swim back up to the surface"
+
+    n "You see a merrow, a mermaid/merman type creature but nonbinary, swimming towards you and pulls you into a bubble of air"
