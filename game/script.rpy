@@ -9,7 +9,7 @@ define n = Character("Narrator", color="#50FFD6")
 
 define tex_merman = Character("Texas Sea-Cowboy Merman", color="#00BFFF")
 define pearl_mermaid = Character("Rose Pearl the Mermaid", color="#FFB6C1")
-define merrow = Character("Merrow", color="#1E1AFF")
+define merfin = Character("Merfin", color="#1E1AFF")
 
 define krak = Character("Kraken the evil octopus", color="#800080")
 
@@ -138,4 +138,15 @@ label swim_undercurrent:
 
     n "You are being pulled down by the undercurrent, and you are struggling to swim back up to the surface"
 
-    n "You see a merrow, a mermaid/merman type creature but nonbinary, swimming towards you and pulls you into a bubble of air"
+    n "You see a merfin, a mermaid/merman type creature but nonbinary, swimming towards you and pulls you into a bubble of air"
+
+    y "I don't know who you are but thank you for saving me from that horrible undercurrent!"
+
+    merfin "You're welcome, I am a merfin. You need to help me too ToT"
+
+    y "What do you need help with?"
+
+    merfin "You need to help me with deciphering codes from a book"
+
+    n "You help the merfin decipher the codes from the book"
+
