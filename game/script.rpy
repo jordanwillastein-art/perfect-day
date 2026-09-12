@@ -157,7 +157,7 @@ label swim_undercurrent:
 
     n "You help the merfin decipher the codes from the book"
     hide book
-    jump swim_left
+    jump scene_3
 
 label scene_3:
     n "You swim back to the shore and dry off in the sun."
@@ -173,7 +173,7 @@ label scene_3:
     n "Well, you're not exactly concerned about that and just keep swimming"
 
     n "Then you see it... A Sea Monster!"
-
+    show sea monster
     n "And just a sea monster... a Kraken!!"
 
     n "You have no where to run! or may I say swim"
@@ -189,15 +189,16 @@ label scene_3:
 
 label kraken_fight:
     n "Choose your weapon"
-        menu:
-            "Magical Lasso":    
-                jump magical_lasso
-            "Brooch venum attack!":
-                jump brooch_attack
-            "Final attack! Nuke activation":
-                jump nuke_code
+    menu:
+        "Magical Lasso":    
+            jump magical_lasso
+        "Brooch venum attack!":
+            jump brooch_attack
+        "Final attack! Nuke activation":
+            jump nuke_code
 
 label magical_lasso:
     n "You whip your magical lasso and the kraken gets significantly weaker!"
     jump kraken_fight
 
+    hide sea monster
