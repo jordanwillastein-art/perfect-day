@@ -1,17 +1,17 @@
-﻿# The script of the game goes in this file.
+﻿ds# The script of the game goes in this file.
 
 # Declare characters used by this game. The color argument colorizes the
 # name of the character.
 
 
-define y = Character("You", color="#F195E7")
-define n = Character("Narrator", color="#50FFD6")
+define y = Character("You", color="#95cef1")
+define n = Character("Narrator", color="#edf494")
 
-define tex_merman = Character("Texas Sea-Cowboy Merman", color="#00BFFF")
-define pearl_mermaid = Character("Rose Pearl the Mermaid", color="#FFB6C1")
-define merfin = Character("Merfin", color="#1E1AFF")
+define tex_merman = Character("Texas Sea-Cowboy Merman", color="#90d6e3")
+define pearl_mermaid = Character("Rose Pearl the Mermaid", color="#ffa0be")
+define merfin = Character("Merfin", color="#2f7a2f")
 
-define krak = Character("Kraken the evil octopus", color="#800080")
+define krak = Character("Jeff the evil Kraken", color="#7e0f0f")
 
 
 # The game starts here.
@@ -31,25 +31,22 @@ label start:
     n "You step onto the tropical white sand, and the beautiful crystal clear turquoise water ripples in front of you"
     
     n "You think 'This will be a peaceful idyllic day, but you’re not sure if it’ll end up ideal' as you sip your matcha latte" # would like to make quotations
-    n "heheh vut i am sure of the delicious matcha i have, you then CHUG the matcha latte"
+    n "heheh but i am sure of the delicious matcha i have, you then CHUG the matcha latte"
     hide boba
-    jump scene_1
 
-label scene_1:
-    hide empty beach
     scene beach
 
     n "You set up your beach umbrella and it is so stylish!"
 
-    n "It’s summer, and that means in Australia the temperatures are lower than the winter"
+    n "It’s summer, and that means in Australia the temperatures are juuust right"
 
-    n "And today means perfect weather! Not scorching hot, but not cold at all"
+    n "Today means perfect weather! Not scorching hot, but not cold at all. perfect for sunbathing"
 
     n "Are you enjoying the weather?"
     menu:
-        "Yes":
+        "Yes, i am enjoying the weather":
             jump yes_weather
-        "No":
+        "No, i don't like the weather today":
             jump no_weather
 
     jump scene_2 
@@ -78,7 +75,7 @@ label no_weather:
 label scene_2:
     n "Finally, you decide to take a dip in the ocean. You run to the waters and splash!! You're out for a swim!"
     show seagull
-    n "Meanwhile, a sneaky seagull grabs a bite out of your fries"
+    n "Meanwhile, a sneaky seagull steals your fries!"
 
     n "Seagull is yelling 'Krraaa! Krraaa!'"
     hide seagull
@@ -160,9 +157,17 @@ label swim_undercurrent:
     jump scene_3
 
 label scene_3:
-    n "You swim back to the shore and dry off in the sun."
     scene beach
-    y "Ah! Time for another swim."
+
+    n "You swim back to the shore and dry off in the sun."
+    n "oh no! you realize that your fries are gone! what are you going to do!"
+    menu:
+        "leave in a fit of annoyance":
+            n "you storm out of the beach forgetting all about your swim troubles as you go home in your uni-rover"
+            n "an overall pretty average day at the beach."
+            return
+        "go back into the water to take your mind off of it":
+            y "Ah! Time for another swim."
 
     n "For some reason, you forgot to put your magical lasso and brooch away"
     scene underwater
@@ -182,7 +187,7 @@ label scene_3:
 
     y "Hmmm maybe this lasso and brooch can be a weapon?"
 
-    y "Aah I got this! The brooch might be a nuclear launch pad and the deciphered code is a nuclear code :D"
+    y "Aah I got this! the deciphered code must a nuclear launch code! :D"
 
     n "KRAKEN BOSS FIGHT TIME!"
     jump kraken_fight
@@ -190,15 +195,58 @@ label scene_3:
 label kraken_fight:
     n "Choose your weapon"
     menu:
-        "Magical Lasso":    
+        "Magical Lasso!":    
             jump magical_lasso
         "Brooch venum attack!":
             jump brooch_attack
-        "Final attack! Nuke activation":
+        "Final attack! Nuke em!":
             jump nuke_code
 
 label magical_lasso:
     n "You whip your magical lasso and the kraken gets significantly weaker!"
     jump kraken_fight
 
+
+
+label brooch_attack:
+    n "You hold out your brooch and the venum blinds the kraken, making the kraken helpless to fight"
+
+    jump kraken_fight
+
+label nuke_code:
+    n "Enter code"
+    menu:
+        "4321":
+            jump fail
+        "6767":
+            jump fail
+        "1234":
+            jump nuke_attack
+        "3981":
+            jump fail
+
+label nuke_attack:
     hide sea monster
+    scene good ending
+    n "You defeated the kraken sea monster and saved the mer-people from disaster!"
+jump scene_4
+label fail:
+    show sea monster
+    scene evil ending
+
+    krak "haha! you couldnt remember the super secret nukular code!"
+    krak "that means you can't defeat me!"
+    krak "this is the perfect outcome for my evil plans! >:)"
+    n "..."
+    n "well at least someone had a perfect day."
+    
+    return
+
+    # This ends the game.
+
+label scene_4:
+n "what a perfect day!"
+
+    # This ends the game.
+    
+return
